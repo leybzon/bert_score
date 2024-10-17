@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='Evaluate LLM answer quality using BERTScore in parallel.')
+    parser = argparse.ArgumentParser(description='Evaluate LLM answer quality using BERTScore')
 
     # Input and output file paths
     parser.add_argument('--input_csv', type=str, default='questions.csv', help='Path to the input CSV file containing questions and reference answers. Default: questions.csv')
